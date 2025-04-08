@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  .tab-nav {
+    background-color: #1e90ff;
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  
+  .tab-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+  }
+  
+  .tab-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .status-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .status-list li {
+    font-size: 18px;
+    padding: 10px 0;
+    border-left: 5px solid #ccc;
+    padding-left: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .status-list li.done {
+    border-color: green;
+    color: green;
+  }
+  
+  .status-list li.in-progress {
+    border-color: orange;
+    color: orange;
+  }
+  
+  @media (max-width: 600px) {
+    .tab-nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
