@@ -1,118 +1,109 @@
-/* Base Reset and Layout */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  body {
-    background: #f0f2f5;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  /* Main container */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #f0f2f5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.container h2 {
+  margin-bottom: 24px;
+  color: #333;
+  font-size: 28px;
+}
+
+.container input {
+  width: 100%;
+  padding: 12px 16px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.container input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.container button:hover {
+  background-color: #0056b3;
+}
+
+.container button a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.container p {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #666;
+}
+
+.container p a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.container p a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
   .container {
+    padding: 30px 20px;
+    box-shadow: none;
+    border-radius: 0;
     background: #fff;
-    padding: 40px 30px;
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-    text-align: center;
-    transition: all 0.3s ease;
   }
-  
-  /* Heading */
+
   .container h2 {
-    margin-bottom: 24px;
-    color: #333;
-    font-size: 28px;
+    font-size: 24px;
   }
-  
-  /* Inputs */
-  .container input {
-    width: 100%;
-    padding: 12px 16px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
-    transition: border-color 0.3s ease;
-  }
-  
-  .container input:focus {
-    outline: none;
-    border-color: #007bff;
-  }
-  
-  /* Button styling */
+
+  .container input,
   .container button {
-    width: 100%;
-    padding: 12px;
-    margin-top: 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s ease;
+    font-size: 15px;
+    padding: 10px 14px;
   }
-  
-  .container button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Make the link inside button behave correctly */
-  .container button a {
-    color: white;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Paragraph and links */
+
   .container p {
-    margin-top: 16px;
-    font-size: 14px;
-    color: #666;
+    font-size: 13px;
   }
-  
-  .container p a {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  .container p a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 480px) {
-    .container {
-      padding: 30px 20px;
-      box-shadow: none;
-      border-radius: 0;
-      background: #fff;
-    }
-  
-    .container h2 {
-      font-size: 24px;
-    }
-  
-    .container input,
-    .container button {
-      font-size: 15px;
-      padding: 10px 14px;
-    }
-  
-    .container p {
-      font-size: 13px;
-    }
-  }
-  
+}

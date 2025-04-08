@@ -1,76 +1,75 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
-  
-  .tab-nav {
-    background-color: #1e90ff;
-    color: white;
-    padding: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.tab-nav {
+  background-color: #1e90ff;
+  color: white;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.tab-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-item span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.menu-item button {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-item button:hover {
+  background-color: #0077cc;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .menu-item {
+    flex-direction: column;
+    align-items: flex-start;
     gap: 10px;
   }
-  
-  .tab-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+
+  .tab-nav {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-  }
-  
-  h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #333;
-  }
-  
-  .menu-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .menu-item span {
-    font-size: 16px;
-    font-weight: 500;
-  }
-  
-  .menu-item button {
-    background-color: #1e90ff;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .menu-item button:hover {
-    background-color: #0077cc;
-  }
-  
-  /* Responsive */
-  @media (max-width: 600px) {
-    .menu-item {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 10px;
-    }
-  
-    .tab-nav {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  
+}
